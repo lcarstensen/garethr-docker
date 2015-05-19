@@ -81,7 +81,7 @@ class docker::params {
       # repo_opt to specify install_options for docker package
       if (versioncmp($::operatingsystemmajrelease, '7') == 0) {
         if $::operatingsystem == 'RedHat' {
-          $repo_opt = '--enablerepo=rhel7-extras'
+          $repo_opt = '--enablerepo=rhel-7-server-extras-rpms'
         } elsif $::operatingsystem == 'OracleLinux' {
           $repo_opt = '--enablerepo=ol7_addons'
         } elsif $::operatingsystem == 'Scientific' {

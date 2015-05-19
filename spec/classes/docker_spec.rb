@@ -358,7 +358,7 @@ describe 'docker', :type => :class do
 
     it { should contain_package('docker').with_name('docker') }
     it { should_not contain_class('epel') }
-    it { should contain_package('docker').with_install_options('--enablerepo=rhel7-extras') }
+    it { should contain_package('docker').with_install_options('--enablerepo=rhel-7-server-extras-rpms') }
 
   end
 
